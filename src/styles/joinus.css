@@ -1,0 +1,48 @@
+.joinus{
+    background-color: #F3851D;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 3% 5%;
+}
+
+.join-left{
+    width:80%;
+}
+.jmove{
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size:2rem;
+}
+.whyjoin{
+    font-family: Open Sans;
+    color: #0A2640;
+    font-size:1rem;
+    margin: 3% 0%;
+}
+
+.sub-inp{
+    width: 50%;
+    padding: 1% 2%;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3rem;
+    font-family: Open Sans;
+    margin-right: 3%;
+}
+.sub-btn{
+    width: 20%;
+    background-color: #14242C;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 1% 2%;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+.join-right{
+    width: 200px;
+}
+.join-right img{
+    width: 100%;
+    height: 100%;
+}

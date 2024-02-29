@@ -1,0 +1,38 @@
+.gallery{
+    background-color: #F3851D;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 3% 5%;
+}
+.gallery-left{
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+.inner-carousel{
+    display: flex;
+}
+.carousel{
+    cursor: grab;
+    overflow:hidden;
+}
+.item{
+    height: 30rem;
+    min-width: 20rem;
+    padding: 40px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+}
+.view-all-gallery-btn{
+    background-color: #ffffff;
+    width: 80%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    height: 30%;
+    color: #F3851D;
+}

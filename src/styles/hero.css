@@ -1,0 +1,25 @@
+.hero{
+    background-image: url('../assets/ss.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+.hero-inner{
+    width: 70%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero-heading{
+    font-family: Montserrat;
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+.hero-paragrah{
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    color: #F1F1F1;
+}

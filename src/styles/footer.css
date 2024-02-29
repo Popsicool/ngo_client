@@ -1,0 +1,35 @@
+footer{
+    background-color: #3B4858;
+    color: #ffffff;
+    font-family: Open Sans;
+    line-height: 2rem;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap:2rem;
+    grid-row-gap:2rem;
+    padding: 2% 5%;
+}
+.footer-top-1{
+    width: 50%;
+    padding-right: 10%;
+}
+.footer-top2{
+    width: 25%;
+}
+.footer-bottom{
+    border-top: 1px solid #ffffff;
+    color: #F1F1F1;
+    font-family: Open Sans;
+    padding: 2% 5%;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bbP{
+    display: flex;
+    gap: 1rem;
+
+}

@@ -1,0 +1,60 @@
+.past-event-div{
+    background-color:#ffffff;
+    padding: 2% 5%;
+}
+.past-events{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:2rem;
+}
+.p-event-head{
+    font-family: Montserrat;
+    color: #14242C;
+    text-align: center;
+    margin: 3% 0;
+    font-size: 3rem;
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.event-title{
+    text-align: center;
+    color: 0A2640;
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin: 5% 0;
+}
+.event-text{
+    color: #000000;
+    font-family: Open sans;
+    padding-bottom: 2%;
+}
+.event-read-more{
+    color: #F3851D;
+}
+.view-all-btn{
+    background-color: #F3851D;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: .5% 3%;
+    text-align: center;
+    width: 20%;
+    margin: 1% auto;
+    cursor: pointer;
+}
+.view-btn-parent{
+    margin: 3% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
