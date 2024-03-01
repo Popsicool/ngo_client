@@ -67,9 +67,10 @@
 }
 .hamguer{
     position: absolute;
-    right: 2%;
+    right: 3%;
     z-index: 30009999;
     color: #ffffff;
+    font-size: 2rem;
     top:2.5%;
 }
 .mobile-nav{
