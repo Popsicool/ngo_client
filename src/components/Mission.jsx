@@ -52,7 +52,7 @@ export const Mission = () => {
                         </div>
                         <div className='mission-right'>
                             <p className='mission-head'>{each.head}</p>
-                            {/* <p className='mission-body'>{each.body}</p> */}
+                            <p className='mission-body'>{each.body}</p>
                         </div>
 
                     </motion.div>

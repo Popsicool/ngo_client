@@ -8,17 +8,17 @@ import sectionAnimate from "./slidingVariants";
 export const UpcomingEvents = () => {
   return (
     <motion.div className='past-event-div'
-    variants={sectionAnimate}
-      initial="start"
-      whileInView="end"
-      viewport={{ once: false, amount: 0.2 }}
-      transition={{ staggerChildren: 0.5 }}
       >
         <h3 className='p-event-head'>Upcoming Events</h3>
         <motion.div>
             {events.map(event => {
                 return(
-                    <motion.div key={event.title} className='upcoming-event-card'>
+                    <motion.div key={event.title} className='upcoming-event-card'
+                    variants={sectionAnimate}
+                    initial="start"
+                    whileInView="end"
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ staggerChildren: 0.5 }}>
                         <div className='upcoming-left'>
                         <div className='absolute-date'>
                                 <div className='absolute-date-inner'>

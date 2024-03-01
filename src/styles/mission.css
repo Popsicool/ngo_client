@@ -4,7 +4,7 @@
 }
 .mission-grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap:2rem
 }
 .misson-card{
@@ -49,15 +49,15 @@
 }
 
 @media screen and (max-width:600px) {
-    .mission-left{
-        width:50px;
-        height:50px;
-        margin-top:2%;
-    }
-
     .mission-head{
         width: 80%;
         font-size: 1.3rem;
+    }
+    .mission-body{
+        width: 80%;
+    }
+    .mission-right{
+        padding-left: 2%;
     }
     
 }

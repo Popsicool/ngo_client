@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/nav.css";
 import { Link } from "react-router-dom";
-import {motion} from "framer-motion"
+import {AnimatePresence, motion} from "framer-motion"
 import { FramerMagnetic } from "./FramerMagnetic";
 
 export const links = [
+  {
+    path:"/",
+    text: "Home"
+  },
   {
     path:"/about",
     text: "About"
@@ -47,11 +51,32 @@ const navVariance = {
     }
   }
 }
+const eachLinkVariance = {
+  start:{
+    y:"-100vh",
+    opacity:0
+  },
+  end: {
+    y:0,
+    opacity:1,
+    transition:{
+      duration: .5,
+      when:"beforeChildren",
+      staggerChildren: .5,
+      type: "spring",
+      stiffness: 120
+    }
+  }
+}
 const MotionLink = motion(Link)
+const width = window.innerWidth
 export const Nav = () => {
+  const [showMenu, setShowMenu] = useState(false)
   return (
+    <>
     <motion.nav
     variants={navVariance}
+    className={width > 600 ? "nav-desk": showMenu ? "nav-mobile" : "hide"}
     initial="start"
     animate="end"
     >
@@ -126,7 +151,6 @@ export const Nav = () => {
         </div>
       </div>
       <div className="nav-bottom">
-        
           <div className="nav-bottom-left">
             <p>Say it</p>
             <Link to="/">
@@ -134,11 +158,13 @@ export const Nav = () => {
             </Link>
           </div>
         <div className="nav-bo">
-          <ul>
+        <AnimatePresence>
+          <motion.ul
+          variants={eachLinkVariance}>
             {links.map(link => {
               return(
-
-                <MotionLink to={link.path}
+                <MotionLink 
+                to={link.path}
                 key={link.path}
                 whileHover={{
                   scale:1.3,
@@ -149,13 +175,18 @@ export const Nav = () => {
                   <FramerMagnetic>
                     {link.text}
                   </FramerMagnetic>
-                  
                   </MotionLink>
               )
             })}
-          </ul>
+          </motion.ul>
+          </AnimatePresence>
         </div>
       </div>
     </motion.nav>
+    <motion.div className="mobile-nav">
+      <Link to="/">Logo</Link>
+      <i className="fa fa-bars hamguer" onClick={() => setShowMenu(!showMenu)} aria-hidden="true"></i>
+    </motion.div>
+    </>
   );
 };

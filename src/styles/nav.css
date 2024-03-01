@@ -1,8 +1,13 @@
-nav{
+.nav-desk, .nav-mobile{
     background-color: #393E46;
     color: #ffffff;
+    width: 100vw;
     font-family: Open Sans;
     font-size: .8rem;
+}
+.nav-mobile{
+    position: fixed;
+    z-index: 9999;
 }
 .menu-icon{
     position: absolute;
@@ -16,6 +21,9 @@ nav{
     display: flex;
     align-content: center;
     justify-content: space-between;
+}
+.nav-mobile .nav-top{
+    display: none;
 }
 .nav-top-left, .nav-top-right{
     display: flex;
@@ -43,20 +51,39 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-/* .hide{
-    transform: translateX(-50vw);
+.nav-mobile .nav-bottom div:last-child ul{
+    display: grid;
+    position: absolute;
+    height: 50vh;
+    left: -50%;
+    z-index: 45;
+    padding: 5% 25%;
+    background-color: #393E46;
+    width: 100vw;
+    transition: 2s all;
 }
-@media screen and (max-width: 600px){
-    .nav-bottom div:last-child ul{
-        height: 100vh;
-        width: 80%;
-        left: 0;
-        top: 0;
-        background-color: #292929;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 1s ease;
+.hide{
+    display: none;
+}
+.hamguer{
+    position: absolute;
+    right: 2%;
+    z-index: 30009999;
+    color: #ffffff;
+    top:2.5%;
+}
+.mobile-nav{
+    background-color: #393E46;
+    padding: 5%;
+    display: none;
+}
+.nav-mobile .nav-bottom  a{
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .mobile-nav{
+        display:grid
     }
-} */
+    
+}
