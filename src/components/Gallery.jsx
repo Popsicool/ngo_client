@@ -41,7 +41,7 @@ export const Gallery = () => {
         <div className='gallery-left'>
             <motion.h3 className='p-event-head'>Picture Gallery</motion.h3>
             <motion.button
-            className='view-all-gallery-btn'
+            className='view-all-gallery-btn desk'
             variants={buttonVariant}
             whileHover='hover'
             >View Gallery</motion.button>
@@ -63,6 +63,11 @@ export const Gallery = () => {
             })}
           </motion.div>
         </motion.div>
+        <motion.button
+            className='view-all-gallery-btn mob'
+            variants={buttonVariant}
+            whileHover='hover'
+            >View Gallery</motion.button>
       </motion.div>
     )
 

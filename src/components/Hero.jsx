@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import buttonVariant from "./buttonVariant";
 import "../styles/hero.css"
 
 
@@ -44,6 +45,20 @@ const innerVariant2 = {
         }
     }
 }
+
+const innerVariant3 = {
+    start:{
+        y: "100vh",
+        opacity: 0
+    },
+    end:{
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1
+        }
+    }
+}
 export const Hero = () => {
   return (
     <motion.div className='hero'
@@ -61,6 +76,21 @@ export const Hero = () => {
             variants={innerVariant2}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat hic sunt unde rerum tempora nesciunt eligendi, placeat voluptates sed iste reprehenderit quas animi quis dolore quasi doloremque ex amet magni incidunt voluptatem facilis! Incidunt ipsa consequuntur sed doloribus velit facere quasi enim cum perspiciatis. Similique repudiandae reprehenderit porro quos?
             </motion.p>
+            <motion.div className='hero-btn-wrapper' variants={innerVariant3}>
+                <motion.button className='hero-btn lmore'
+                variants={buttonVariant}
+                whileHover="hover"
+                >
+                    learn more
+                </motion.button>
+
+                <motion.button className='hero-btn donate'
+                variants={buttonVariant}
+                whileHover="hover"
+                >
+                    Donate
+                </motion.button>
+            </motion.div>
 
         </motion.div>
 

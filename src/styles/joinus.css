@@ -46,3 +46,21 @@
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width:600px) {
+    .join-form{
+        display: grid;
+    }
+    .sub-inp{
+        width: 100%;
+        font-size: 1rem;
+        margin: 5% 0;
+        border-radius: 20px;
+        padding: 3%;
+    }
+    .sub-btn{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 1rem;
+    }
+}

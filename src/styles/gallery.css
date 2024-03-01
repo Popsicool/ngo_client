@@ -36,3 +36,30 @@
     height: 30%;
     color: #F3851D;
 }
+.desk{
+    display: grid;
+}
+.mob{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .desk{
+        display: none;
+    }
+    .mob{
+        display: grid;
+    }
+    .gallery{
+        display: grid;
+    }
+    .gallery-left{
+        width: 100%;
+    }
+    .view-all-gallery-btn{
+        width: 50%;
+        margin: 0 auto;
+        padding: 2%;
+        margin-bottom: 3%;
+        height: 50px;
+    }
+}

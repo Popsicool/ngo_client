@@ -18,7 +18,7 @@ export const JoinUs = () => {
         <motion.div className='join-left'>
             <p className='jmove'>Join The Movement</p>
             <p className='whyjoin'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-            <form>
+            <form className='join-form'>
               <input placeholder='Your email address' className='sub-inp' type='email'/>
               <motion.button
               className='sub-btn'

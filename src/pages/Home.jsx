@@ -7,6 +7,7 @@ import { JoinUs } from '../components/JoinUs';
 import { PastEvents } from '../components/PastEvents';
 import { Gallery } from '../components/Gallery';
 import { UpcomingEvents } from '../components/UpcomingEvents';
+import { Mission } from '../components/Mission';
 
 
 export const Home = () => {
@@ -21,6 +22,7 @@ export const Home = () => {
         <title>HOME | NGO</title>
       </Helmet>
       <Hero/>
+      <Mission/>
       <PastEvents/>
       <Gallery/>
       <UpcomingEvents/>

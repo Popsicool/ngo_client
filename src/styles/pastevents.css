@@ -2,6 +2,7 @@
     background-color:#ffffff;
     padding: 2% 5%;
 }
+
 .past-events{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,7 +29,7 @@
 }
 .event-title{
     text-align: center;
-    color: 0A2640;
+    color: #0A2640;
     font-family: Montserrat;
     font-size: 2rem;
     margin: 5% 0;
@@ -57,4 +58,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:600px){
+    .p-event-head{
+        font-size: 2.5rem;
+        padding: 2% 0;
+    }
+    .event-card{
+        border: 1px solid #ece9e9;
+        box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 20%);
+        padding: 2%;
+    }
+    .past-events{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap:2rem;
+        grid-row-gap:2rem;
+    }
+    .view-all-btn{
+        width: 80%;
+        padding: 3% 0;
+    }
+    .event-title{
+        text-align: center;
+        color: #0A2640;
+        font-family: Montserrat;
+        font-size: 1.2rem;
+        margin: 5% 0;
+    }
 }
