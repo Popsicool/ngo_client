@@ -54,7 +54,7 @@
 .nav-mobile .nav-bottom div:last-child ul{
     display: grid;
     position: absolute;
-    height: 50vh;
+    height: 100vh;
     left: -50%;
     z-index: 45;
     padding: 5% 25%;
