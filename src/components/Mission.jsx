@@ -45,12 +45,14 @@ export const Mission = () => {
             {data.map(each => {
                 return(
                     <motion.div className='misson-card' key={each.head}>
-                        <div className='mission-left'>
-                            <img src={each.img}/>
+                        <div  className='mission-left-wrap'>
+                            <div className='mission-left'>
+                                <img src={each.img}/>
+                            </div>
                         </div>
                         <div className='mission-right'>
                             <p className='mission-head'>{each.head}</p>
-                            <p className='mission-body'>{each.body}</p>
+                            {/* <p className='mission-body'>{each.body}</p> */}
                         </div>
 
                     </motion.div>

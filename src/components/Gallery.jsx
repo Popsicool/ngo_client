@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import images from './Picture'
-import { Modal } from './Modal'
 import buttonVariant from './buttonVariant'
 import sectionAnimate from "./slidingVariants";
 import "../styles/gallery.css"
@@ -18,17 +17,12 @@ const showtext = {
 
 export const Gallery = () => {
     const [width, setWidth] = useState(0)
-    const [showModal, setShowModal] = useState(false)
-    const [selected, setSelected] = useState(null)
     const carousel = useRef();
   
     useEffect(() => {
       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
     }, [])
-    const handleClick = (e) => {
-      setSelected(e)
-      setShowModal(true)
-    }
+
   
     return (
       <motion.div className='gallery'
@@ -46,7 +40,6 @@ export const Gallery = () => {
             whileHover='hover'
             >View Gallery</motion.button>
         </div>
-        {showModal && <Modal setShowModal={setShowModal} selected={selected}/>}
         <motion.div className='carousel' ref={carousel}>
           <motion.div className='inner-carousel'
           drag="x"

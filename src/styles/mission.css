@@ -4,14 +4,16 @@
 }
 .mission-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr;
     gap:2rem
 }
 .misson-card{
     display:flex;
     justify-content: space-between;
-    height: 200px;
     overflow: hidden;
+}
+.mission-left-wrap{
+    width: 20%;
 }
 .mission-left{
     width: 100px;
@@ -29,6 +31,7 @@
     height: 100%;
 }
 .mission-right{
+    width: 80%;
     line-height: 2rem;
 }
 .mission-head{
@@ -36,13 +39,13 @@
     color: #ffffff;
     font-family: Montserrat;
     font-size: 2rem;
-    margin: 5% 0;
 }
 .mission-body{
     text-align: left;
     color: #0A2640;
     font-family: "Open sans";
     padding-bottom: 2%;
+    overflow-x: none;
 }
 
 @media screen and (max-width:600px) {
@@ -55,12 +58,6 @@
     .mission-head{
         width: 80%;
         font-size: 1.3rem;
-    }
-    .mission-body{
-        width: 50% !important;
-    }
-    .mission-body{
-        width: 80%;
     }
     
 }
