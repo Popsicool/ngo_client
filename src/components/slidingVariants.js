@@ -1,5 +1,5 @@
 const sectionAnimate = {
-  start: { x: 100, opacity: 0 },
+  start: { x: -100, opacity: 0 },
   end: {
     x: 0,
     opacity: 1,

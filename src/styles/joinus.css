@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     padding: 3% 0 3% 5%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .join-left{

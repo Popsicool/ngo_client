@@ -1,6 +1,8 @@
 .mission{
     background-color: #F3851D;
     padding: 5%;
+    width: 100%;
+    overflow-x: hidden;
 }
 .mission-grid{
     display: grid;

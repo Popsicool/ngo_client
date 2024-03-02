@@ -21,11 +21,11 @@ const heroVariant = {
 
 const innerVariant = {
     start:{
-        x: "-100vw",
+        scale: 0,
         opacity: 0
     },
     end:{
-        x: 0,
+        scale: 1,
         opacity: 1,
         transition: {
             duration: 1
@@ -34,7 +34,7 @@ const innerVariant = {
 }
 const innerVariant2 = {
     start:{
-        x: "100vw",
+        x: "-100vw",
         opacity: 0
     },
     end:{
