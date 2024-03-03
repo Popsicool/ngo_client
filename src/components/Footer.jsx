@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import { FramerMagnetic } from "./FramerMagnetic";
 import { links } from "./Nav";
-import sectionAnimate from "./slidingVariants";
+import sectionAnimate from "./variants/slidingVariants";
 
 const MotionLink = motion(Link);
 export const Footer = () => {

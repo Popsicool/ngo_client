@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import pageVariant from '../components/PageVariants'
+import pageVariant from '../components/variants/PageVariants'
 import { Helmet} from 'react-helmet-async';
 import { Hero } from '../components/Hero';
 import { JoinUs } from '../components/JoinUs';

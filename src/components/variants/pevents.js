@@ -1,4 +1,4 @@
-import img from "../assets/outreach.jpeg";
+import img from "../../assets/outreach.jpeg";
 const events = [
   {
     img: img,

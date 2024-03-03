@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import images from './Picture'
-import buttonVariant from './buttonVariant'
-import sectionAnimate from "./slidingVariants";
+import images from './variants/Picture'
+import buttonVariant from './variants/buttonVariant'
+import sectionAnimate from "./variants/slidingVariants";
 import "../styles/gallery.css"
+import { Link } from 'react-router-dom';
 
 const showtext = {
   hidden: {
@@ -34,11 +35,13 @@ export const Gallery = () => {
       >
         <div className='gallery-left'>
             <motion.h3 className='p-event-head'>Picture Gallery</motion.h3>
-            <motion.button
-            className='view-all-gallery-btn desk'
-            variants={buttonVariant}
-            whileHover='hover'
-            >View Gallery</motion.button>
+            <Link to='/gallery'>
+              <motion.button
+              className='view-all-gallery-btn desk'
+              variants={buttonVariant}
+              whileHover='hover'
+              >View Gallery</motion.button>
+            </Link>
         </div>
         <motion.div className='carousel' ref={carousel}>
           <motion.div className='inner-carousel'
@@ -46,21 +49,24 @@ export const Gallery = () => {
           dragConstraints = {{right:0, left: -width}}
           whileTap={{cursor: "grabbing"}}
           >
-            {images.map(image => {
+            {images.map((image, index) => {
               return(
-                <motion.div key={image} className='item'
+                <motion.div key={index} className='item'
                 whileHover={{scale:1.5}}>
-                  <img src={image} alt="image"/>
+                  <img src={image.img} alt="image"/>
                 </motion.div>
               )
             })}
           </motion.div>
         </motion.div>
+        <Link to='/gallery'>
         <motion.button
             className='view-all-gallery-btn mob'
             variants={buttonVariant}
             whileHover='hover'
-            >View Gallery</motion.button>
+            >View Gallery
+            </motion.button>
+        </Link>
       </motion.div>
     )
 

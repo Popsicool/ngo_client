@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import sectionAnimate from "./slidingVariants";
+import sectionAnimate from "./variants/slidingVariants";
 import '../styles/mission.css'
 import m1 from '../assets/mission/m1.svg'
 import m2 from '../assets/mission/m2.svg'

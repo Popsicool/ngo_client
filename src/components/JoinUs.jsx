@@ -2,8 +2,8 @@ import React from 'react'
 import {motion} from "framer-motion"
 import "../styles/joinus.css"
 import des from '../assets/des.png'
-import buttonVariant from './buttonVariant'
-import sectionAnimate from "./slidingVariants";
+import buttonVariant from './variants/buttonVariant'
+import sectionAnimate from "./variants/slidingVariants";
 
 
 export const JoinUs = () => {

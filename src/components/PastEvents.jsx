@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/pastevents.css";
-import buttonVariant from "./buttonVariant";
+import buttonVariant from "./variants/buttonVariant";
 import { Link } from "react-router-dom";
-import sectionAnimate from "./slidingVariants";
-import events from "./pevents";
+import sectionAnimate from "./variants/slidingVariants";
+import events from "./variants/pevents";
 
 export const PastEvents = () => {
   return (

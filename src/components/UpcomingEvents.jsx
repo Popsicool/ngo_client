@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import events from "./pevents"
+import events from "./variants/pevents"
 import '../styles/upcoming.css'
-import buttonVariant from './buttonVariant'
-import sectionAnimate from "./slidingVariants";
+import buttonVariant from './variants/buttonVariant'
+import sectionAnimate from "./variants/slidingVariants";
 
 export const UpcomingEvents = () => {
   return (

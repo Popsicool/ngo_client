@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import buttonVariant from "./buttonVariant";
+import buttonVariant from "./variants/buttonVariant";
 import "../styles/hero.css"
 
 
