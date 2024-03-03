@@ -27,12 +27,13 @@ const Filter = ({filter, setFilter}) => {
 }
 
 export const GalleryPage = () => {
-  const [collection, setCollection] = useState([])
+  const [collection, setCollection] = useState(data)
     const [filter, setFilter] = useState("")
     useEffect(() => {
         if (filter === ""){
             setCollection(data)
             return
+
         }
         setCollection(data.filter(each => each.ctg === filter))
     }, [filter])

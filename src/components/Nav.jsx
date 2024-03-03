@@ -166,6 +166,7 @@ export const Nav = () => {
                 <MotionLink 
                 to={link.path}
                 key={link.path}
+                onClick={() => {setShowMenu(false)}}
                 whileHover={{
                   scale:1.3,
                   originX:0,
