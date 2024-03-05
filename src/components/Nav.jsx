@@ -53,6 +53,18 @@ const navVariance = {
 }
 const eachLinkVariance = {
   start:{
+    opacity: 0
+  },
+  end: {
+    opacity:1,
+    scale: [1.3, 1],
+    transition: {
+      duration: .3
+    }
+  }
+}
+const allLinksVariance = {
+  start:{
     y:"-100vh",
     opacity:0
   },
@@ -159,11 +171,11 @@ export const Nav = () => {
           </div>
         <div className="nav-bo">
         <AnimatePresence>
-          <motion.ul
-          variants={eachLinkVariance}>
+          <motion.ul>
             {links.map(link => {
               return(
-                <MotionLink 
+                <MotionLink
+                variants={eachLinkVariance} 
                 to={link.path}
                 key={link.path}
                 onClick={() => {setShowMenu(false)}}

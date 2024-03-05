@@ -6,6 +6,7 @@ import { Helmet} from 'react-helmet-async';
 import pageVariant from '../components/variants/PageVariants'
 import buttonVariant from '../components/variants/buttonVariant'
 import "../styles/gallerypage.css"
+import { TopText } from '../components/TopText';
 
 const Filter = ({filter, setFilter}) => {
   return (
@@ -33,7 +34,6 @@ export const GalleryPage = () => {
         if (filter === ""){
             setCollection(data)
             return
-
         }
         setCollection(data.filter(each => each.ctg === filter))
     }, [filter])
@@ -48,9 +48,7 @@ export const GalleryPage = () => {
       <Helmet>
         <title>Gallery | NGO</title>
       </Helmet>
-      <motion.div>
-        <h3 className='our-gallery-text'>Our Gallery</h3>
-      </motion.div>
+        <TopText text="Our Gallery"/>
       <Filter setFilter={setFilter} filter={filter}/>
       <motion.div className='gallery-outer' layout
     >

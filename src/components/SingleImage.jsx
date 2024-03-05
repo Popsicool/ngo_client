@@ -12,7 +12,6 @@ export const SingleImg = ({card}) => {
         <div>
             <img src={card.img}/>
         </div>
-
     </motion.div>
   )
 }

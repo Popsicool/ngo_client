@@ -7,7 +7,8 @@ const pageVariant = {
   end:{
     opacity: 1,
     x: 0,
-    transition: {duration: .5}
+    transition: {duration: .5,
+    when: "beforeChildren"}
   },
   exit:{
     opacity: 1,
