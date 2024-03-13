@@ -7,7 +7,6 @@
     width: 60%;
     padding: 5%;
     border: none;
-    background-color: #F3851D;
 }
 .contact-right{
     width: 40%;
@@ -16,6 +15,7 @@
 .contact-right iframe{
     width: 100%;
     height: 100%;
+    border: none;
 }
 .getintouch{
     font-family: Montserrat;
@@ -37,11 +37,17 @@
     padding: 2%;
     font-family: Open Sans;
     margin: 1% 0;
+    border:1px solid #F3851D;
     border-radius: 25px;
-    border: none;
 }
 .contact-text-area{
     height: 20vh;
+}
+.cont-btn-wrap{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 2%;
 }
 .contact-btn{
     width: 50%;
@@ -51,5 +57,51 @@
     border-radius: 20px;
     border: 0;
     padding: 1% 3%;
+    background-color: #F3851D;
     font-family: Open Sans;
+}
+
+.contact-down{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contact-card{
+    background-color: #F3851D;
+    padding: 5% 3%;
+    border-radius: 20px;
+    color:#ffffff;
+    height: 250px;
+    text-align: center;
+    /* box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 20%); */
+}
+.contact-card:nth-child(2){
+    background-color: #ffffff;
+    color:#F3851D;
+    border: 1px solid #F3851D;
+}
+.contact-card h3{
+    font-family: Montserrat;
+    font-weight: bolder;
+    padding-bottom: 10%;
+}
+.contact-card p{
+    font-family: Open sans;
+    color: #0A2640;
+    line-height: 2rem;
+}
+
+@media screen and (max-width:600px){
+    .contactus-main{
+        display: grid;
+    }
+    .contactus-main > div{
+        width: 100%;
+    }
+    .contact-down{
+        grid-template-columns: 1fr;
+    }
+
 }

@@ -1,12 +1,11 @@
-.nav-desk, .nav-mobile{
+.nav-desk{
     background-color: #393E46;
     color: #ffffff;
     width: 100vw;
     font-family: Open Sans;
     font-size: .8rem;
-}
-.nav-mobile{
-    position: fixed;
+    position: sticky;
+    top:0;
     z-index: 9999;
 }
 .menu-icon{
@@ -20,9 +19,7 @@
     align-content: center;
     justify-content: space-between;
 }
-.nav-mobile .nav-top{
-    display: none;
-}
+
 .nav-top-left, .nav-top-right{
     display: flex;
     gap: 1rem;
@@ -47,22 +44,11 @@
     display: flex;
     justify-content: space-between;
 }
-.nav-mobile .nav-bottom div:last-child ul{
-    display: grid;
-    position: absolute;
-    height: 100vh;
-    left: -50%;
-    z-index: 45;
-    padding: 25%;
-    background-color: #393E46;
-    width: 100vw;
-    transition: 2s all;
-}
-.hide{
-    display: none;
-}
+
+
 .hamguer{
     position: absolute;
+    display: none;
     right: 3%;
     z-index: 30009999;
     color: #ffffff;
@@ -79,8 +65,28 @@
 }
 
 @media screen and (max-width:600px) {
+    .hamguer{
+        display: grid;
+    }
     .mobile-nav{
         display:grid
+    }
+    .nav-top{
+        display: none;
+    }
+    .nav-bottom div:last-child ul{
+        display: grid;
+        position: absolute;
+        height: 100vh;
+        left: -50%;
+        z-index: 45;
+        padding: 25%;
+        background-color: #393E46;
+        width: 100vw;
+        transition: 2s all;
+    }
+    .hide{
+        display: none !important;
     }
     
 }

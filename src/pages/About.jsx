@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import pageVariant from "../components/variants/PageVariants";
+import { Helmet} from 'react-helmet-async';
 import { TopText } from "../components/TopText";
 import "../styles/aboutpage.css";
 import pic1 from "../assets/img/img1.jpg";
@@ -13,6 +14,9 @@ export const About = () => {
       initial="start"
       animate="end"
     >
+      <Helmet>
+        <title>About | NGO</title>
+      </Helmet>
       <TopText text="About us" />
       <motion.div className="about-hero">
         <div className="about-hero-back"></div>

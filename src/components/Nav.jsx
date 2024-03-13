@@ -17,18 +17,18 @@ export const links = [
     path:"/gallery",
     text: "Gallery"
   },
-  {
-    path:"/events",
-    text: "Events"
-  },
-  {
-    path:"/report",
-    text: "Report"
-  },
-  {
-    path:"/agenda",
-    text: "Agenda"
-  },
+  // {
+  //   path:"/events",
+  //   text: "Events"
+  // },
+  // {
+  //   path:"/report",
+  //   text: "Report"
+  // },
+  // {
+  //   path:"/agenda",
+  //   text: "Agenda"
+  // },
   {
     path:"/contact",
     text: "Contact"
@@ -81,14 +81,14 @@ const allLinksVariance = {
   }
 }
 const MotionLink = motion(Link)
-const width = window.innerWidth
 export const Nav = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <>
     <motion.nav
     variants={navVariance}
-    className={width > 600 ? "nav-desk": showMenu ? "nav-mobile" : "hide"}
+    // className={width > 600 ? "nav-desk": showMenu ? "nav-mobile" : "hide"}
+    className="nav-desk"
     initial="start"
     animate="end"
     >
@@ -171,7 +171,7 @@ export const Nav = () => {
           </div>
         <div className="nav-bo">
         <AnimatePresence>
-          <motion.ul>
+          <motion.ul className={!showMenu && "hide"}>
             {links.map(link => {
               return(
                 <MotionLink
@@ -195,11 +195,8 @@ export const Nav = () => {
           </AnimatePresence>
         </div>
       </div>
+      <i className= "fa fa-bars hamguer" onClick={() => setShowMenu(!showMenu)} aria-hidden="true"></i>
     </motion.nav>
-    <motion.div className="mobile-nav">
-      <Link to="/">Logo</Link>
-      <i className="fa fa-bars hamguer" onClick={() => setShowMenu(!showMenu)} aria-hidden="true"></i>
-    </motion.div>
     </>
   );
 };
