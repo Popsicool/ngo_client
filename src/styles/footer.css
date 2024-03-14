@@ -42,9 +42,7 @@ footer{
     justify-content: space-between;
 }
 @media screen and (max-width:600px) {
-    .join-form-div{
-        width: 100%;
-    }
+
     .join-form{
         display: grid;
     }

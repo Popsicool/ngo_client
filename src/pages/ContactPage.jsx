@@ -90,7 +90,7 @@ export const ContactPage = () => {
         <motion.div className="contact-right">
           <iframe
             title="location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15825.954437703762!2d3.8146535999999998!3d7.411048200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1689954050789!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.541945617719!2d8.536572475001613!3d7.732191807938608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105081c65a00b225%3A0xa0e547e788801abb!2sFederal%20University%20Of%20Agriculture%2C%20Makurdi!5e0!3m2!1sen!2sng!4v1710426256764!5m2!1sen!2sng"
             className="map"
             width="600"
             height="450"

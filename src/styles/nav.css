@@ -96,6 +96,10 @@
     height: 100%;
 }
 @media screen and (max-width:600px) {
+    .partner-wrap{
+        width: 100px;
+        height: 100px;
+    }
     .hamguer{
         display: grid;
     }

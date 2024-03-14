@@ -31,7 +31,6 @@ export const Footer = () => {
         </div>
       <div className="footer-top">
         <div className="footer-top-1">
-          <p>NGO</p>
           <p>
           Every click, share, and donation brings us closer to helping people with sickle cell disease. Join the movement and make a difference today!
           </p>
@@ -92,7 +91,7 @@ export const Footer = () => {
           </FramerMagnetic>
 
           <FramerMagnetic>
-            <Link to="fb.com">
+            <Link to="https://wa.me/+2348069482021">
               <svg
                 width="24"
                 height="24"
@@ -108,7 +107,7 @@ export const Footer = () => {
             </Link>
           </FramerMagnetic>
           <FramerMagnetic>
-            <Link to="fb.com">
+            <Link to="https://twitter.com/Samson_Akinola1">
               <svg
                 width="24"
                 height="24"
