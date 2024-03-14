@@ -99,6 +99,9 @@
         width: 100px;
         height: 100px;
     }
+    .ourpartners{
+        font-size: 1.5rem;
+    }
     .hamguer{
         display: grid;
     }
