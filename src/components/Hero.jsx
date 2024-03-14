@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import buttonVariant from "./variants/buttonVariant";
+import {Link} from "react-router-dom"
 import "../styles/hero.css"
 
 
@@ -77,19 +78,23 @@ export const Hero = () => {
                 Welcome to Sickel cell heroes foundation where we strive to make a difference in the lives of those affected by sickle cell disease. Our mission is to raise awareness, provide support, and advocate for better healthcare and policies for individuals and families impacted by this condition.
             </motion.p>
             <motion.div className='hero-btn-wrapper' variants={innerVariant3}>
+                <Link to="/about">
                 <motion.button className='hero-btn lmore'
                 variants={buttonVariant}
                 whileHover="hover"
                 >
-                    learn more
+                    
+                        learn more
+                    
                 </motion.button>
+                </Link>
 
-                <motion.button className='hero-btn donate'
+                {/* <motion.button className='hero-btn donate'
                 variants={buttonVariant}
                 whileHover="hover"
                 >
                     Donate
-                </motion.button>
+                </motion.button> */}
             </motion.div>
 
         </motion.div>

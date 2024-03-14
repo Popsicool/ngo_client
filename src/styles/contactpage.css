@@ -103,5 +103,8 @@
     .contact-down{
         grid-template-columns: 1fr;
     }
+    .contact-inp, .contact-inp:active, .contact-inp:focus, .contact-text-area, .contact-text-area:active, .contact-text-area:focus{
+        border-radius: 10px;
+    }
 
 }

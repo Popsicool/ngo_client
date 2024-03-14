@@ -30,11 +30,7 @@
     border-radius: 20px;
     cursor:pointer;
 }
-.our-gallery-text{
-    text-align: center;
-    font-size: 2rem;
-    font-family: Montserrat;
-}
+
 .active-btn{
     background-color: #F3851D;
 }

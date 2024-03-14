@@ -6,7 +6,11 @@
     width: 100%;
     overflow-x: hidden;
 }
-
+.howjoin{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
 .join-left{
     width:80%;
 }
@@ -23,7 +27,7 @@
 }
 
 .sub-inp{
-    width: 50%;
+    width: 80%;
     padding: 1% 2%;
     border-radius: 50px;
     border: none;
@@ -50,19 +54,18 @@
 }
 
 @media screen and (max-width:600px) {
-    .join-form{
-        display: grid;
-    }
     .sub-inp{
-        width: 100%;
+        width: 150%;
         font-size: 1rem;
         margin: 5% 0;
-        border-radius: 20px;
-        padding: 3%;
+        border-radius: 10px;
+        padding: 5%;
     }
     .sub-btn{
-        width: 50%;
+        width: 100%;
         margin-left: 25%;
+        border-radius: 10px;
         font-size: 1rem;
+        padding: 2%;
     }
 }

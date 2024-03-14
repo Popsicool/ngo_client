@@ -64,7 +64,7 @@ export const Facts = () => {
                 </div>
                 <div className='sources'>
                     <p>Sources: </p>
-                    <a className='source-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8460996/">National Library of medicine</a>, <a className='source-link' href="https://www.ehealthafrica.org/blog/2018/6/19/world-sickle-cell-day-6-facts-you-need-to-know">eHealth</a>
+                    (1) <a className='source-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8460996/">National Library of medicine</a>, (2) <a className='source-link' href="https://www.ehealthafrica.org/blog/2018/6/19/world-sickle-cell-day-6-facts-you-need-to-know">eHealth</a>
                 </div>
             </div>
 

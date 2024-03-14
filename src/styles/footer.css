@@ -33,7 +33,22 @@ footer{
     gap: 1rem;
 
 }
+.join-form{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width:600px) {
+    .join-form-div{
+        width: 100%;
+    }
+    .join-form{
+        display: grid;
+    }
+
     .footer-top{
         display: grid;
     }

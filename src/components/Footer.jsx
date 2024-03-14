@@ -5,6 +5,7 @@ import "../styles/footer.css";
 import { FramerMagnetic } from "./FramerMagnetic";
 import { links } from "./Nav";
 import sectionAnimate from "./variants/slidingVariants";
+import buttonVariant from "./variants/slidingVariants";
 
 const MotionLink = motion(Link);
 export const Footer = () => {
@@ -16,16 +17,23 @@ export const Footer = () => {
       viewport={{ once: false, amount: 0.2 }}
       transition={{ staggerChildren: 0.5 }}
       >
+        <div className="join-form-div">
+          <form className='join-form'>
+                <input placeholder='Your email address' className='sub-inp' type='email'/>
+                <motion.button
+                className='sub-btn'
+          variants={buttonVariant}
+          whileHover='hover'
+          >
+            Subscribe
+          </motion.button>
+              </form>
+        </div>
       <div className="footer-top">
         <div className="footer-top-1">
           <p>NGO</p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ipsam
-            hic aperiam alias deserunt! Eum illum nobis tempora suscipit dolor,
-            numquam mollitia! Qui alias debitis reprehenderit tempora, molestiae
-            odit, veritatis, tenetur laudantium ipsa maxime quasi fugit eveniet
-            recusandae. Officiis illum numquam delectus praesentium officia
-            corporis ipsam vero quam, dicta quisquam!
+          Every click, share, and donation brings us closer to helping people with sickle cell disease. Join the movement and make a difference today!
           </p>
         </div>
         <div className="footer-top2">

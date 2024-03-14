@@ -5,6 +5,7 @@ import { Helmet} from 'react-helmet-async';
 import { TopText } from "../components/TopText";
 import "../styles/aboutpage.css";
 import pic1 from "../assets/img/img1.jpg";
+import { Partners } from "../components/Partners";
 
 export const About = () => {
   return (
@@ -26,7 +27,7 @@ export const About = () => {
         </h3>
       </motion.div>
       <motion.div className="founder-corner">
-        <h3 className="the-begining">The beginning</h3>
+        <h3 className="the-begining">How it started</h3>
         <motion.div className="beginning-corner-down">
           <div className="beginning-left">
             <img src={pic1} alt="the beginning" />
@@ -59,24 +60,12 @@ export const About = () => {
             <h3 className="omv">Our Vission</h3>
             <ul>
               <li>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                voluptatem deserunt consequatur earum accusantium, ratione
-                molestiae omnis nisi quibusdam pariatur.
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, eligendi ea quibusdam provident recusandae totam
-                vitae rerum cumque quaerat perferendis.
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                harum nihil facere corrupti quos quis porro sapiente odit iste
-                velit! Fugit sunt distinctio nesciunt? Tenetur?
+              A world free from sickle cell disease, where everyone has access to quality care and a chance to live a healthy, fulfilling life.
               </li>
             </ul>
             <h3 className="omv">Our Mission</h3>
             <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquid id quis sint inventore maxime quae tempora corrupti fuga voluptas.</li>
+              <li>To advocate a better living condition for people with sickle cell disease, empower patients and families, advocate for better care and resources, and raise public awareness to create a brighter future for all affected by this disease.</li>
             </ul>
           </div>
           <div className="beginning-left">
@@ -84,24 +73,7 @@ export const About = () => {
           </div>
         </motion.div>
       </motion.div>
-      <motion.div className="founder-corner">
-        <h3>Our Partners</h3>
-        <motion.div>
-          List of partners
-        </motion.div>
-
-      </motion.div>
-      <motion.div className="founder-colored">
-        <h3>Join Us</h3>
-        <div className="beginning-corner-down">
-          <div>
-            Donate
-          </div>
-          <div>
-            Become a member
-          </div>
-        </div>
-      </motion.div>
+      <Partners/>
       
     </motion.div>
   );

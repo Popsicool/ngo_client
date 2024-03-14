@@ -39,7 +39,6 @@ export const GalleryPage = () => {
     }, [filter])
   return (
     <motion.div
-    className='gallerypage'
     variants={pageVariant}
     initial="start"
     animate="end"
@@ -49,18 +48,20 @@ export const GalleryPage = () => {
         <title>Gallery | NGO</title>
       </Helmet>
         <TopText text="Our Gallery"/>
-      <Filter setFilter={setFilter} filter={filter}/>
-      <motion.div className='gallery-outer' layout
-    >
-        <AnimatePresence>
-            {collection.map((each, idx) => {
-                return(
-                    <SingleImg card={each} key={idx}/>
-                )
-            })}
-        </AnimatePresence>
+        <div className="gallerypage">
+          <Filter setFilter={setFilter} filter={filter}/>
+          <motion.div className='gallery-outer' layout
+        >
+            <AnimatePresence>
+                {collection.map((each, idx) => {
+                    return(
+                        <SingleImg card={each} key={idx}/>
+                    )
+                })}
+            </AnimatePresence>
 
-    </motion.div>
+        </motion.div>
+        </div>
       </motion.div>
   )
 }

@@ -5,7 +5,9 @@ export const TopText = ({text}) => {
   return (
     <motion.div variants={sectionAnimate}
     initial='start'
-    animate='end'>
+    animate='end'
+    className='top-text'
+    >
         <h3 className='our-gallery-text'>{text}</h3>
     </motion.div>
   )
