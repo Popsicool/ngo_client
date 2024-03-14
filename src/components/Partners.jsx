@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import uam from "../assets/partners/uam.jpeg"
+import AnimatedLogos from './AnimatedLogos'
 
 
 
@@ -11,7 +12,8 @@ export const Partners = () => {
   return (
     <motion.div className="founder-corner">
         <h3 className='ourpartners'>Our trusted partners</h3>
-        <motion.div className='partners-logo'>
+        <AnimatedLogos logos={partners}/>
+        {/* <motion.div className='partners-logo'>
             {partners.map((each, idx) => {
                 return (
                     <div key={idx} className='partner-wrap'>
@@ -19,7 +21,7 @@ export const Partners = () => {
                     </div>
                 )
             })}
-        </motion.div>
+        </motion.div> */}
 
       </motion.div>
   )
