@@ -8,6 +8,7 @@ import { PastEvents } from '../components/PastEvents';
 import { Gallery } from '../components/Gallery';
 import { UpcomingEvents } from '../components/UpcomingEvents';
 import { Mission } from '../components/Mission';
+import { Facts } from '../components/Facts';
 
 
 export const Home = () => {
@@ -22,6 +23,7 @@ export const Home = () => {
         <title>HOME | NGO</title>
       </Helmet>
       <Hero/>
+      <Facts/>
       <Mission/>
       <PastEvents/>
       <Gallery/>

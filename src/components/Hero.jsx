@@ -74,7 +74,7 @@ export const Hero = () => {
             </motion.h3>
             <motion.p className='hero-paragrah'
             variants={innerVariant2}>
-                Welcome to Sickel cell heroes foundation where we strive to make a difference in the lives of those affected by sickle cell disease. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Our mission is to raise awareness, provide support, and advocate for better healthcare and policies for individuals and families impacted by this condition.
+                Welcome to Sickel cell heroes foundation where we strive to make a difference in the lives of those affected by sickle cell disease. Our mission is to raise awareness, provide support, and advocate for better healthcare and policies for individuals and families impacted by this condition.
             </motion.p>
             <motion.div className='hero-btn-wrapper' variants={innerVariant3}>
                 <motion.button className='hero-btn lmore'
