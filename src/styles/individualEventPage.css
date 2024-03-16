@@ -26,3 +26,9 @@
     font-weight: bolder;
     padding: 3% 0;
 }
+
+@media screen and (max-width:600px){
+    .eventpageImg{
+        height: 350px;
+    }
+}
