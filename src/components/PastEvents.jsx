@@ -3,10 +3,13 @@ import { motion } from "framer-motion";
 import "../styles/pastevents.css";
 import buttonVariant from "./variants/buttonVariant";
 import { Link } from "react-router-dom";
-import sectionAnimate from "./variants/slidingVariants";
-import events from "./variants/pevents";
+import { useSnapshot } from 'valtio';
+import {state} from '../App'
+import { EventCard } from "./EventCard";
+
 
 export const PastEvents = () => {
+  const {events} = useSnapshot(state);
   return (
     <motion.div
       className="past-event-div"
@@ -14,52 +17,22 @@ export const PastEvents = () => {
       <motion.h3 className="p-event-head">Past Events</motion.h3>
 
       <motion.div className="past-events">
-        {events.map((event) => {
+        {events.slice(0, 3).map((event) => {
           return (
-            <motion.div className="event-card" key={event.title}
-            variants={sectionAnimate}
-            initial="start"
-            whileInView="end"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ staggerChildren: 0.5 }}
-            >
-              <div className="card-img">
-                <motion.img
-                  src={event.img}
-                  whileHover={{ scale: 1.3 }}
-                  transition={{ duration: 1 }}
-                />
-              </div>
-              <div>
-                <h3 className="event-title">{event.title}</h3>
-                <p className="event-text">
-                  {event.description.length > 200
-                    ? event.description.substring(0, 200) + "..."
-                    : event.description}
-                </p>
-                <Link to="/">
-                  <motion.span
-                    className="event-read-more"
-                    whileHover={{
-                      color: "#f8e112",
-                    }}
-                  >
-                    Read More
-                  </motion.span>
-                </Link>
-              </div>
-            </motion.div>
+            <EventCard event={event} key={event.id}/>
           );
         })}
       </motion.div>
-      <div className="view-btn-parent">
-        <motion.button
-          className="view-all-btn"
-          variants={buttonVariant}
-          whileHover="hover"
-        >
-          View All Events
-        </motion.button>
+      <div >
+        <Link to="/events" className="view-btn-parent">
+          <motion.button
+            variants={buttonVariant}
+            whileHover="hover"
+            className="view-all-btn"
+          >
+            View All Events
+          </motion.button>
+        </Link>
       </div>
     </motion.div>
   );

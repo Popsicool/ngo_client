@@ -1,0 +1,28 @@
+.indeventpage{
+    padding: 5%;
+}
+
+.eventpageImg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+}
+.thumb{
+    height: 50px !important;
+}
+.thumb img{
+    height:100%;
+}
+.eventpageImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.eventdescription{
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    color: #F3851D;
+    font-weight: bolder;
+    padding: 3% 0;
+}

@@ -9,9 +9,12 @@ import { Gallery } from '../components/Gallery';
 import { UpcomingEvents } from '../components/UpcomingEvents';
 import { Mission } from '../components/Mission';
 import { Facts } from '../components/Facts';
+import { useSnapshot } from 'valtio';
+import {state} from '../App'
 
 
 export const Home = () => {
+  const { upcomingEvents } = useSnapshot(state)
   return (
     <motion.div
     variants={pageVariant}
@@ -27,7 +30,7 @@ export const Home = () => {
       <Mission/>
       <PastEvents/>
       <Gallery/>
-      <UpcomingEvents/>
+      {upcomingEvents.length >  0 && <UpcomingEvents/>}
       <JoinUs/>
     </motion.div>
   )

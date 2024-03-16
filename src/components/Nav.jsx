@@ -17,10 +17,10 @@ export const links = [
     path:"/gallery",
     text: "Gallery"
   },
-  // {
-  //   path:"/events",
-  //   text: "Events"
-  // },
+  {
+    path:"/events",
+    text: "Events"
+  },
   // {
   //   path:"/report",
   //   text: "Report"
@@ -171,7 +171,7 @@ export const Nav = () => {
           </div>
         <div className="nav-bo">
         <AnimatePresence>
-          <motion.ul className={!showMenu && "hide"}>
+          <motion.ul className={!showMenu ? "hide" : ""}>
             {links.map(link => {
               return(
                 <MotionLink
@@ -195,7 +195,7 @@ export const Nav = () => {
           </AnimatePresence>
         </div>
       </div>
-      <i className= "fa fa-bars hamguer" onClick={() => setShowMenu(!showMenu)} aria-hidden="true"></i>
+      <i className={showMenu ? "fa fa-times hamguer" : "fa fa-bars hamguer"}  onClick={() => setShowMenu(!showMenu)} aria-hidden="true"></i>
     </motion.nav>
     </>
   );
