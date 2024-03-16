@@ -1,69 +1,69 @@
-.fact-wrap{
-    padding: 5%;
+.fact-wrap {
+  padding: 5%;
 }
-.quote{
-    font-style: italic;
-    font-family: Montserrat;
-    padding-bottom:5%;
-    line-height: 2rem;
+.quote {
+  font-style: italic;
+  font-family: Montserrat;
+  padding-bottom: 5%;
+  line-height: 2rem;
 }
-.fact{
-    display:flex;
-    justify-content: space-between;
+.fact {
+  display: flex;
+  justify-content: space-between;
 }
 
-.fact-left{
-    width: 40%;
-    height: 600px;
+.fact-left {
+  width: 40%;
+  height: 600px;
 }
-.fact-left img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.fact-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.fact-right-wrap{
-    width: 55%;
+.fact-right-wrap {
+  width: 55%;
 }
-.fact-right{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.fact-right {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
-.fact-card{
-    display: flex;
-    font-family: Open Sans;
-    color: #ffffff;
-    padding: 5%;
-    line-height: 1.5rem;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
+.fact-card {
+  display: flex;
+  font-family: Open Sans;
+  color: #ffffff;
+  padding: 5%;
+  line-height: 1.5rem;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.fact-card:nth-child(even){
-    background-color: #0A2640;
-    color:#F3851D;
+.fact-card:nth-child(even) {
+  background-color: #0a2640;
+  color: #f3851d;
 }
-.fact-card:nth-child(odd){
-    background-color: #F3851D;
-    color:#0A2640;
+.fact-card:nth-child(odd) {
+  background-color: #f3851d;
+  color: #0a2640;
 }
-.sources{
-    padding-top: 5%;
+.sources {
+  padding-top: 5%;
 }
-.source-link{
-    color: black !important;
+.source-link {
+  color: black !important;
 }
 
 @media screen and (max-width: 600px) {
-    .fact{
-        display: grid;
-    }
-    .fact div{
-        width: 100%;
-    }
-    .fact-right{
-        grid-template-columns: 1fr;
-        padding: 5%;
-    }
+  .fact {
+    display: grid;
+  }
+  .fact div {
+    width: 100%;
+  }
+  .fact-right {
+    grid-template-columns: 1fr;
+    padding: 5%;
+  }
 }

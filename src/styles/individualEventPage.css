@@ -1,34 +1,34 @@
-.indeventpage{
-    padding: 5%;
+.indeventpage {
+  padding: 5%;
 }
 
-.eventpageImg{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 500px;
+.eventpageImg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 500px;
 }
-.thumb{
-    height: 50px !important;
+.thumb {
+  height: 50px !important;
 }
-.thumb img{
-    height:100%;
+.thumb img {
+  height: 100%;
 }
-.eventpageImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.eventpageImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.eventdescription{
-    font-size: 1.3rem;
-    font-family: Montserrat;
-    color: #F3851D;
-    font-weight: bolder;
-    padding: 3% 0;
+.eventdescription {
+  font-size: 1.3rem;
+  font-family: Montserrat;
+  color: #f3851d;
+  font-weight: bolder;
+  padding: 3% 0;
 }
 
-@media screen and (max-width:600px){
-    .eventpageImg{
-        height: 350px;
-    }
+@media screen and (max-width: 600px) {
+  .eventpageImg {
+    height: 350px;
+  }
 }

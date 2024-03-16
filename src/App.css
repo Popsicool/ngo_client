@@ -1,7 +1,10 @@
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a, a:active, a:hover, a:visited{
-    color: #ffffff;
-    text-decoration: none;
+a,
+a:active,
+a:hover,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
 }

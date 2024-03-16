@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import pageVariant from "../components/variants/PageVariants";
-import { Helmet} from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import { TopText } from "../components/TopText";
 import "../styles/eventspage.css";
 import events from "../components/variants/pevents";
 import { EventCard } from "../components/EventCard";
-
 
 export const Events = () => {
   return (
@@ -24,13 +23,10 @@ export const Events = () => {
         <h3 className="peventT">Our Previous events</h3>
         <motion.div className="past-events">
           {events.map((event) => {
-            return (
-              <EventCard event={event} key={event.id}/>
-            );
+            return <EventCard event={event} key={event.id} />;
           })}
         </motion.div>
       </div>
-      
     </motion.div>
-  )
-}
+  );
+};

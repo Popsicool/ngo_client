@@ -1,69 +1,69 @@
-
-.upcoming-event-card{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-    border: 1px solid #ECE9E9;
-    margin-bottom: 2rem;
-    line-height: 2rem;
-    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 20%);
+.upcoming-event-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  border: 1px solid #ece9e9;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 20%);
 }
-.upcoming-left, .upcoming-right{
-    width: 45%;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
+.upcoming-left,
+.upcoming-right {
+  width: 45%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.upcoming-left  img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 20px;
+.upcoming-left img {
+  width: 100%;
+  /* object-fit: cover; */
+  height: 100%;
+  border-radius: 20px;
 }
-.view-upcoming-btn{
-    width: 40%;
-    padding: 2%;
-    margin: 0 auto;
-    margin-left: 25%;
-    border: none;
-    background-color: #14242C;
-    color: #ffffff;
-    border-radius: 20px;
-    z-index: 200;
+.view-upcoming-btn {
+  width: 40%;
+  padding: 2%;
+  margin: 0 auto;
+  margin-left: 25%;
+  border: none;
+  background-color: #14242c;
+  color: #ffffff;
+  border-radius: 20px;
+  z-index: 200;
 }
-.absolute-date{
-    position: relative;
-    background-color: green;
+.absolute-date {
+  position: relative;
+  background-color: green;
 }
-.absolute-date-inner{
-    position: absolute;
-    top:100px;
-    font-family: Open Sans;
-    z-index: 2;
-    width: 100px;
-    z-index: 300;
-    background-color: #F3851D;
-    text-align: center;
+.absolute-date-inner {
+  position: absolute;
+  top: 100px;
+  font-family: Open Sans;
+  z-index: 2;
+  width: 100px;
+  z-index: 300;
+  background-color: #f3851d;
+  text-align: center;
 }
-.update .upyear{
-    color: #14242C;
-    font-weight: bolder;
+.update .upyear {
+  color: #14242c;
+  font-weight: bolder;
 }
-.upyear{
-    font-size: 1.5rem;
+.upyear {
+  font-size: 1.5rem;
 }
-
 
 @media screen and (max-width: 600px) {
-    .upcoming-event-card{
-        display: grid;
-    }
-    .upcoming-left, .upcoming-right{
-        width: 100%;
-    }
-    .view-upcoming-btn{
-        width: 80%;
-        margin-left: 10%;
-    }
+  .upcoming-event-card {
+    display: grid;
+  }
+  .upcoming-left,
+  .upcoming-right {
+    width: 100%;
+  }
+  .view-upcoming-btn {
+    width: 80%;
+    margin-left: 10%;
+  }
 }

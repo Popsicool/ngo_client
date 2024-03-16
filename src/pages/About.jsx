@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import pageVariant from "../components/variants/PageVariants";
-import { Helmet} from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import { TopText } from "../components/TopText";
 import "../styles/aboutpage.css";
-import pic1 from "../assets/img/img1.jpg";
+import logo from "../assets/img/ssf2.jpg";
+import pic1 from "../assets/img/ssf3.jpg";
 import { Partners } from "../components/Partners";
 
 export const About = () => {
@@ -30,7 +31,7 @@ export const About = () => {
         <h3 className="the-begining">How it started</h3>
         <motion.div className="beginning-corner-down">
           <div className="beginning-left">
-            <img src={pic1} alt="the beginning" />
+            <img src={logo} alt="the beginning" />
           </div>
           <div className="beginning-right">
             <p>
@@ -60,12 +61,33 @@ export const About = () => {
             <h3 className="omv">Our Vission</h3>
             <ul>
               <li>
-              A world free from sickle cell disease, where everyone has access to quality care and a chance to live a healthy, fulfilling life.
+                Our vision is to reduce the Burden of sicklecell Disease in
+                Nigeria through awareness and research
               </li>
             </ul>
             <h3 className="omv">Our Mission</h3>
             <ul>
-              <li>To advocate a better living condition for people with sickle cell disease, empower patients and families, advocate for better care and resources, and raise public awareness to create a brighter future for all affected by this disease.</li>
+              <li>
+                We raise awareness on Sicklecell Disease in Nigeria through Key
+                advocacy initiatives and <strong>programmes</strong>. Our
+                approach involves genotype compatibility awareness, free
+                genotype testing and genetic counseling.
+              </li>
+              <br />
+              <li>
+                We hope to eliminate the <strong>stigma</strong> associated with
+                Sicklecell Disease through compassion and education.
+              </li>
+              <li>
+                We have a team of multidisciplinary medical consultants and
+                community-oriented professionals, all working together to
+                empower SCD patients to live a better and healthier lives. Our
+                efforts are made possible through the generosity of caring
+                individuals, corporations and foundations locally and hope to
+                have collaboration with global institutions to provide
+                cutting-edge research and SCD training to improve patient
+                outcome
+              </li>
             </ul>
           </div>
           <div className="beginning-left">
@@ -73,8 +95,7 @@ export const About = () => {
           </div>
         </motion.div>
       </motion.div>
-      <Partners/>
-      
+      <Partners />
     </motion.div>
   );
 };

@@ -1,71 +1,71 @@
-.joinus{
-    background-color: #F3851D;
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 0 3% 5%;
-    width: 100%;
-    overflow-x: hidden;
+.joinus {
+  background-color: #f3851d;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0 3% 5%;
+  width: 100%;
+  overflow-x: hidden;
 }
-.howjoin{
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 1.3rem;
+.howjoin {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 1.3rem;
 }
-.join-left{
-    width:80%;
+.join-left {
+  width: 80%;
 }
-.jmove{
-    font-family: Montserrat;
-    color: #ffffff;
-    font-size:2rem;
+.jmove {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 2rem;
 }
-.whyjoin{
-    font-family: Open Sans;
-    color: #0A2640;
-    font-size:1rem;
-    margin: 3% 0%;
-}
-
-.sub-inp{
-    width: 80%;
-    padding: 1% 2%;
-    border-radius: 50px;
-    border: none;
-    font-size: 1.3rem;
-    font-family: Open Sans;
-    margin-right: 3%;
-}
-.sub-btn{
-    width: 20%;
-    background-color: #14242C;
-    color: #ffffff;
-    border-radius: 50px;
-    padding: 1% 2%;
-    font-size: 1.3rem;
-    border: none;
-    cursor: pointer;
-}
-.join-right{
-    width: 200px;
-}
-.join-right img{
-    width: 100%;
-    height: 100%;
+.whyjoin {
+  font-family: Open Sans;
+  color: #0a2640;
+  font-size: 1rem;
+  margin: 3% 0%;
 }
 
-@media screen and (max-width:600px) {
-    .sub-inp{
-        width: 100%;
-        font-size: 1rem;
-        margin: 5% 0;
-        border-radius: 10px;
-        padding: 5%;
-    }
-    .sub-btn{
-        width: 50%;
-        margin-left: 25%;
-        border-radius: 10px;
-        font-size: 1rem;
-        padding: 2%;
-    }
+.sub-inp {
+  width: 80%;
+  padding: 1% 2%;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.3rem;
+  font-family: Open Sans;
+  margin-right: 3%;
+}
+.sub-btn {
+  width: 20%;
+  background-color: #14242c;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 1% 2%;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+.join-right {
+  width: 200px;
+}
+.join-right img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-inp {
+    width: 100%;
+    font-size: 1rem;
+    margin: 5% 0;
+    border-radius: 10px;
+    padding: 5%;
+  }
+  .sub-btn {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 2%;
+  }
 }

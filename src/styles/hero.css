@@ -1,53 +1,53 @@
-.hero{
-    background-image: url('../assets/herobg.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 90vh;
-    display: grid;
-    place-items: center;
+.hero {
+  background-image: url("../assets/herobg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  place-items: center;
 }
 
-.hero::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 90vh;
-    background-color: rgb(0,0,0,0.5);
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(0, 0, 0, 0.5);
 }
-.hero-inner{
-    width: 70%;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
+.hero-inner {
+  width: 70%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
 }
-.hero-heading{
-    font-family: Montserrat;
-    font-size: 3rem;
-    margin-bottom: 5%;
+.hero-heading {
+  font-family: Montserrat;
+  font-size: 3rem;
+  margin-bottom: 5%;
 }
-.hero-paragrah{
-    font-family: Open Sans;
-    font-size: 1.3rem;
-    color: #F1F1F1;
-    margin-bottom: 15%;
+.hero-paragrah {
+  font-family: Open Sans;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  margin-bottom: 15%;
 }
-.hero-btn-wrapper{
-    justify-content: space-between;
-    gap: 2rem;
-    width: 30%;
-    margin: 0 auto;
+.hero-btn-wrapper {
+  justify-content: space-between;
+  gap: 2rem;
+  width: 30%;
+  margin: 0 auto;
 }
-.hero-btn{
-    background-color: #F3851D;
-    padding: 4% 2%;
-    color: #F1F1F1;
-    font-family: Open Sans;
-    border: 3px solid #ffffff;
-    border-radius: 20px;
-    width: 100%;
+.hero-btn {
+  background-color: #f3851d;
+  padding: 4% 2%;
+  color: #f1f1f1;
+  font-family: Open Sans;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  width: 100%;
 }
 /* .hero-btn:last-child{
     background-color: #ffffff;
@@ -55,14 +55,14 @@
     font-weight: bolder;
     color: #F3851D;
 } */
-@media screen and (max-width:600px) {
-    .hero-heading{
-        font-size: 2rem;
-    }
-    .hero-paragrah{
-        font-size: 1rem;
-    }
-    .hero-btn-wrapper{
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .hero-paragrah {
+    font-size: 1rem;
+  }
+  .hero-btn-wrapper {
+    width: 100%;
+  }
 }

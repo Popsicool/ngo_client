@@ -1,71 +1,71 @@
-.gallery{
-    background-color: #F3851D;
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 0 3% 5%;
+.gallery {
+  background-color: #f3851d;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0 3% 5%;
 }
-.gallery-left{
-    width: 30%;
-    display: grid;
-    place-items: center;
+.gallery-left {
+  width: 30%;
+  display: grid;
+  place-items: center;
 }
-.inner-carousel{
-    display: flex;
+.inner-carousel {
+  display: flex;
 }
-.carousel{
-    cursor: grab;
-    overflow:hidden;
+.carousel {
+  cursor: grab;
+  overflow: hidden;
 }
-.item{
-    height: 30rem;
-    min-width: 20rem;
-    padding: 40px;
+.item {
+  height: 30rem;
+  min-width: 20rem;
+  padding: 40px;
 }
-.item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-    pointer-events: none;
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  pointer-events: none;
 }
-.view-all-gallery-btn{
-    background-color: #ffffff;
-    width: 100%;
-    font-size: 1.5rem;
-    border: none;
-    padding: 5%;
-    border-radius: 20px;
-    /* height: 50%; */
-    color: #F3851D;
+.view-all-gallery-btn {
+  background-color: #ffffff;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  padding: 5%;
+  border-radius: 20px;
+  /* height: 50%; */
+  color: #f3851d;
 }
-.desk{
-    display: grid;
+.desk {
+  display: grid;
 }
-.mob{
-    display: none;
+.mob {
+  display: none;
 }
 @media screen and (max-width: 600px) {
-    .desk{
-        display: none;
-    }
-    .mob{
-        display: grid;
-    }
-    .gallery{
-        display: grid;
-    }
-    .gallery-left{
-        width: 100%;
-    }
-    .view-all-gallery-btn{
-        width: 50%;
-        margin: 0 auto;
-        padding: 2%;
-        margin-bottom: 3%;
-        height: 50px;
-    }
-    .item{
-        min-width: 16rem;
-        height: 25rem;
-        padding: 40px;
-    }
+  .desk {
+    display: none;
+  }
+  .mob {
+    display: grid;
+  }
+  .gallery {
+    display: grid;
+  }
+  .gallery-left {
+    width: 100%;
+  }
+  .view-all-gallery-btn {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-bottom: 3%;
+    height: 50px;
+  }
+  .item {
+    min-width: 16rem;
+    height: 25rem;
+    padding: 40px;
+  }
 }
