@@ -16,7 +16,7 @@ export const About = () => {
       animate="end"
     >
       <Helmet>
-        <title>About | NGO</title>
+        <title>About | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
       <TopText text="About us" />
       <motion.div className="about-hero">

@@ -23,7 +23,7 @@ export const Home = () => {
     exit="exit"
     >
       <Helmet>
-        <title>HOME | NGO</title>
+        <title>HOME | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
       <Hero/>
       <Facts/>

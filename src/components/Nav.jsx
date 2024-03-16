@@ -3,6 +3,8 @@ import "../styles/nav.css";
 import { Link } from "react-router-dom";
 import {AnimatePresence, motion} from "framer-motion"
 import { FramerMagnetic } from "./FramerMagnetic";
+import logo from "../assets/img/ssf2.jpg"
+// import logo from "../assets/img/logo.png"
 
 export const links = [
   {
@@ -164,9 +166,10 @@ export const Nav = () => {
       </div>
       <div className="nav-bottom">
           <div className="nav-bottom-left">
-            <p>Say it</p>
             <Link to="/">
-              <p>XYZ NGO</p>
+              <div className="logo-wrap">
+                <img src={logo} alt="sshf logo" />
+              </div>
             </Link>
           </div>
         <div className="nav-bo">

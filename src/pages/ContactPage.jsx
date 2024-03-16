@@ -28,7 +28,7 @@ export const ContactPage = () => {
       animate="end"
     >
       <Helmet>
-        <title>Contact | NGO</title>
+        <title>Contact | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
       <TopText text="Contact us" />
       <motion.div className="contactus-main">

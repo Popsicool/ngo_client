@@ -8,6 +8,20 @@
     top:0;
     z-index: 9999;
 }
+.logo-wrap{
+    height: 40px;
+    width: 100px;
+    border: 1px solid #F3851D;
+    border-radius: 50%;
+    padding: 2%;
+    /* background-color: #F3851D; */
+}
+.logo-wrap img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    /* object-fit: cover; */
+}
 .menu-icon{
     position: absolute;
     top:50px;

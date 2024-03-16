@@ -45,7 +45,7 @@ export const GalleryPage = () => {
     exit="exit"
     >
       <Helmet>
-        <title>Gallery | NGO</title>
+        <title>Gallery | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
         <TopText text="Our Gallery"/>
         <div className="gallerypage">

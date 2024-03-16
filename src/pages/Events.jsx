@@ -17,7 +17,7 @@ export const Events = () => {
       animate="end"
     >
       <Helmet>
-        <title>Events | NGO</title>
+        <title>Events | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
       <TopText text="Events" />
       <div className="past-events-page">

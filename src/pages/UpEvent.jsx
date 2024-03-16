@@ -26,7 +26,7 @@ export const UpEvent = () => {
       animate="end"
       >
         <Helmet>
-        <title>Events | NGO</title>
+        <title>Events | SICKLE CELL HEROES FOUNDATION</title>
       </Helmet>
       <TopText text="Upcoming event" />
       <div className='indeventpage'>
@@ -39,7 +39,7 @@ export const UpEvent = () => {
         <p className='eventdescription'>Date</p>
         <p>{singleEvent.date}</p>
         <p className='eventdescription'>Venue</p>
-        <p>{singleEvent.date}</p>
+        <p>{singleEvent.venue}</p>
       </div>
     </motion.div>
   )
