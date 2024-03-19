@@ -39,7 +39,7 @@ export const UpcomingEvents = () => {
               <motion.img
                 whileHover={{ scale: 1.3 }}
                 transition={{ duration: 1 }}
-                src={event.img}
+                src={event.banner}
                 alt="upcoming"
               />
             </div>

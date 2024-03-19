@@ -1,7 +1,9 @@
+
 .backdrop {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
+  z-index: 999999999999 !important;
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.7);
@@ -9,10 +11,11 @@
 
 .img-wrap {
   width: 70vw;
-  height: 70vh;
-  margin: auto;
-  position: absolute;
-  z-index: 5;
+  z-index: 999999999999 !important;
+  left: 15vw;
+  position: fixed;
+  height: 80vh;
+  top:15vh;
 }
 .img-wrap img {
   width: 100%;

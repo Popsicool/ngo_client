@@ -2,8 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import sectionAnimate from "./variants/slidingVariants";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png"
+
+const handleImageRetrieval = (imgArray) => {
+  for (let i = 0; i < imgArray.length; i++) {
+    const currentItem = imgArray[i];
+    if (isImage(currentItem)) {
+      return currentItem;
+    }
+  }
+  return logo;
+};
+
+const isImage = (item) => {
+  const extension = item.split('.').pop().toLowerCase();
+  return ['jpg', 'jpeg', 'png', 'gif'].includes(extension);
+};
+
 
 export const EventCard = ({ event }) => {
+  const imgSrc = handleImageRetrieval(event.img);
   return (
     <motion.div
       className="event-card"
@@ -16,7 +34,7 @@ export const EventCard = ({ event }) => {
     >
       <div className="card-img">
         <motion.img
-          src={event.img[0]}
+          src={imgSrc}
           whileHover={{ scale: 1.3 }}
           transition={{ duration: 1 }}
         />

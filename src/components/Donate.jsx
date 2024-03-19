@@ -24,8 +24,8 @@ export const Donate = () => {
           className="contact-card"
         >
           <h3>Donations</h3>
-          <p>Account Name: XYZ Foundation</p>
-          <p>Account Number: 0111111111</p>
+          <p>Account Name: Samson Kyakma Sukumun</p>
+          <p>Account Number: 3010558492</p>
           <p>Bank: GTBank</p>
         </motion.div>
         <motion.div
@@ -39,12 +39,11 @@ export const Donate = () => {
             Sarwuan tarka univeristy Makurdi, Benue State
           </p>
           <p>
-            <i className="fa fa-phone" aria-hidden="true"></i> 08032753239 |
-            09147831980
+            <i className="fa fa-phone" aria-hidden="true"></i> +2348032753239
           </p>
           <p>
             <i className="fa fa-envelope-o" aria-hidden="true"></i>{" "}
-            schf@gmail.com
+            support@schf.org.ng
           </p>
         </motion.div>
       </motion.div>

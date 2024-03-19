@@ -8,8 +8,9 @@ import { ContactPage } from "../pages/ContactPage";
 import { Events } from "../pages/Events";
 import { IndividualEvent } from "../pages/IndividualEvent";
 import { UpEvent } from "../pages/UpEvent";
+import { Error } from "../pages/Error";
 
-export const PageRoutes = () => {
+export const PageRoutes = ({setShowModal, setSelected}) => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,11 +20,12 @@ export const PageRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery" element={<GalleryPage setShowModal={setShowModal} setSelected={setSelected}/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/events" element={<Events />} />
         <Route path="/event/:id" element={<IndividualEvent />} />
         <Route path="/uevent/:id" element={<UpEvent />} />
+        <Route path="*" element={<Error/>} />
       </Routes>
     </AnimatePresence>
   );

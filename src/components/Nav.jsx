@@ -96,6 +96,7 @@ export const Nav = () => {
       >
         <div className="nav-top">
           <div className="nav-top-left">
+          <Link to="mailto:support@schf.org.ng">
             <FramerMagnetic>
               <svg
                 width="24"
@@ -110,7 +111,10 @@ export const Nav = () => {
                 />
               </svg>
             </FramerMagnetic>
-            <p>schf@gmail.com</p>
+            </Link>
+            <Link to="mailto:support@schf.org.ng">
+            <p>support@schf.org.ng</p>
+            </Link>
           </div>
           <div className="nav-top-right">
             <FramerMagnetic>
@@ -198,6 +202,7 @@ export const Nav = () => {
             </AnimatePresence>
           </div>
         </div>
+        
         <i
           className={showMenu ? "fa fa-times hamguer" : "fa fa-bars hamguer"}
           onClick={() => setShowMenu(!showMenu)}

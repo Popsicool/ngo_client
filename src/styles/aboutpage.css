@@ -49,11 +49,11 @@
   border-radius: 20px;
 }
 .beginning-left {
-  height: 50vh;
+  height: 80vh;
 }
 .beginning-left img {
   width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   height: 100%;
   border-radius: 20px;
 }
@@ -80,5 +80,6 @@
   }
   .beginning-left {
     order: 0;
+    height: 60vh;
   }
 }

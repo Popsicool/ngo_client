@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { TopText } from "../components/TopText";
 import "../styles/aboutpage.css";
 import logo from "../assets/img/ssf2.jpg";
-import pic1 from "../assets/img/ssf3.jpg";
+import pic1 from "../assets/img/img8.jpg";
 import { Partners } from "../components/Partners";
 
 export const About = () => {
@@ -35,21 +35,33 @@ export const About = () => {
           </div>
           <div className="beginning-right">
             <p>
-              The movement started in the year 2023 when Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Sapiente veritatis minus cumque
-              eius. Necessitatibus hic, doloribus itaque molestias delectus iure
-              id enim odio inventore iste assumenda, ipsam, facilis fuga
-              voluptatum!
-            </p>
+              The movement was started in 2023 by Dr Miss Kyakma Samson Sukumun
+              (B.sc. Msc. PhD) a lecturer at Joseph Sarwuan Tarka University
+              Makurdi formally University of Agriculture Makurdi, Benue State
+              Nigeria.
+            </p><br />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-              voluptate iusto delectus reprehenderit explicabo nesciunt, impedit
-              quibusdam ut. Tempore laudantium itaque, facilis quod, optio,
-              architecto excepturi dolore enim error natus odit. Mollitia,
-              eligendi rem culpa inventore a vel, sapiente laborum ea eum, quis
-              exercitationem voluptates expedita temporibus ipsam eius magnam
-              atque velit? Debitis perspiciatis nulla cum modi aperiam
-              repudiandae.
+              Having survived sickle cell for 35years with many complications
+              and losing family members to this great pain, therefore, decided
+              to join the Forces of eradicating sickle cell in Nigeria by
+              establishing the Sickle Cell Heroes Foundation which is aimed at
+              awareness creation, passing of vital information on sickle cell
+              causes, diagnosis and complications plus measures to take to stay
+              healthy/alive, giving help/aids, medication to sickle cell
+              patients. And also more to this, our vision is to reduce the
+              burden of sickle cell disease in Nigeria through awareness and
+              research, key advocacy programmes which involve Genotype
+              compatibility awareness, free testing and genetic counselling.
+            </p><br />
+            <p>
+              We also hope to eliminate the stigma associated with sickle cell
+              through education and proper counselling. we have a platform for
+              the foundation on different social media handles. In the Heroes
+              Whatsapp foundation platform we pass information, and quizzes on
+              sickle cell health tips, we do what is called prime time every 1st
+              Sunday of the month allowing our great warriors to share their
+              stories, and experiences on the life race with sickle cell
+              complications, sets backs and victory all intertwined.
             </p>
           </div>
         </motion.div>

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import data from "../components/variants/Picture";
 import { SingleImg } from "../components/SingleImage";
 import { Helmet } from "react-helmet-async";
 import pageVariant from "../components/variants/PageVariants";
 import buttonVariant from "../components/variants/buttonVariant";
+import { useSnapshot } from "valtio";
+import { state } from "../App";
 import "../styles/gallerypage.css";
 import { TopText } from "../components/TopText";
+import { Modal } from "../components/Modal";
 
 const Filter = ({ filter, setFilter }) => {
   return (
@@ -22,33 +24,35 @@ const Filter = ({ filter, setFilter }) => {
       <motion.button
         variants={buttonVariant}
         whileHover="hover"
-        className={filter === "outreach" ? "ftr-btn active-btn" : "ftr-btn"}
-        onClick={() => setFilter("outreach")}
+        className={filter === "picture" ? "ftr-btn active-btn" : "ftr-btn"}
+        onClick={() => setFilter("picture")}
       >
-        Outreach
+        Pictures
       </motion.button>
       <motion.button
         variants={buttonVariant}
         whileHover="hover"
-        className={filter === "picnic" ? "ftr-btn active-btn" : "ftr-btn"}
-        onClick={() => setFilter("picnic")}
+        className={filter === "video" ? "ftr-btn active-btn" : "ftr-btn"}
+        onClick={() => setFilter("video")}
       >
-        Picnic
+        Videos
       </motion.button>
     </div>
   );
 };
 
-export const GalleryPage = () => {
-  const [collection, setCollection] = useState(data);
+export const GalleryPage = ({setShowModal, setSelected}) => {
+  const { images } = useSnapshot(state);
+  const [collection, setCollection] = useState(images);
   const [filter, setFilter] = useState("");
   useEffect(() => {
     if (filter === "") {
-      setCollection(data);
+      setCollection(images);
       return;
     }
-    setCollection(data.filter((each) => each.ctg === filter));
+    setCollection(images.filter((each) => each.type === filter));
   }, [filter]);
+  
   return (
     <motion.div
       variants={pageVariant}
@@ -65,7 +69,7 @@ export const GalleryPage = () => {
         <motion.div className="gallery-outer" layout>
           <AnimatePresence>
             {collection.map((each, idx) => {
-              return <SingleImg card={each} key={idx} />;
+              return <SingleImg card={each} key={idx} setShowModal={setShowModal} setSelected={setSelected}/>;
             })}
           </AnimatePresence>
         </motion.div>

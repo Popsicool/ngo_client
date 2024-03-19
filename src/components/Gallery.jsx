@@ -1,23 +1,31 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import images from "./variants/Picture";
 import buttonVariant from "./variants/buttonVariant";
 import sectionAnimate from "./variants/slidingVariants";
+import { useSnapshot } from "valtio";
+import { state } from "../App";
 import "../styles/gallery.css";
 import { Link } from "react-router-dom";
 
-const showtext = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-  },
-};
+// const showtext = {
+//   hidden: {
+//     opacity: 0,
+//   },
+//   visible: {
+//     opacity: 1,
+//   },
+// };
 
 export const Gallery = () => {
+  const { images } = useSnapshot(state);
   const [width, setWidth] = useState(0);
   const carousel = useRef();
+  const isImage = (url) => {
+    return /\.(jpeg|jpg|gif|png)$/i.test(url);
+  };
+  const isVideo = (url) => {
+    return /\.(mp4|ogg|webm)$/i.test(url);
+  };
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
@@ -51,14 +59,19 @@ export const Gallery = () => {
           dragConstraints={{ right: 0, left: -width }}
           whileTap={{ cursor: "grabbing" }}
         >
-          {images.map((image, index) => {
+          {images.slice(0, 8).map((image, index) => {
             return (
               <motion.div
                 key={index}
                 className="item"
                 whileHover={{ scale: 1.5 }}
               >
-                <img src={image.img} alt="image" />
+                {isImage(image.url) ?  <img src={image.url} alt="image" /> : isVideo(image.url) && <video controls>
+          <source src={image.url} type="video/mp4" />
+          {/* Add additional source elements for other video formats if necessary */}
+          Your browser does not support the video tag.
+        </video>}
+                
               </motion.div>
             );
           })}

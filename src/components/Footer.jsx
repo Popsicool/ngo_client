@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
@@ -6,9 +6,31 @@ import { FramerMagnetic } from "./FramerMagnetic";
 import { links } from "./Nav";
 import sectionAnimate from "./variants/slidingVariants";
 import buttonVariant from "./variants/slidingVariants";
+import LoadingSpinner from "./Spinner";
 
 const MotionLink = motion(Link);
 export const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [msg, setMsg] = useState("")
+  const submitForm = (e) => {
+    e.preventDefault();
+    var regex = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+    if (email === "" || !regex.test(email)) {
+      setLoading(false);
+      return;
+    }
+    const formdata = new FormData();
+    formdata.append("email", email);
+    const requestOptions = {
+      method: "POST",
+      body: formdata,
+    };
+    fetch("https://www.api.schf.org.ng/subscribe", requestOptions);
+    setMsg("Thank you for subscribing!")
+    setEmail("")
+    setLoading(false);
+  };
   return (
     <motion.footer
       variants={sectionAnimate}
@@ -18,21 +40,28 @@ export const Footer = () => {
       transition={{ staggerChildren: 0.5 }}
     >
       <div className="join-form-div">
-        <form className="join-form">
+        <br />
+        {loading && <LoadingSpinner />}
+        <form className="join-form" onSubmit={submitForm}>
           <input
             placeholder="Your email address"
             className="sub-inp"
             type="email"
+            value={email}
+            required
+            onChange={(e) => setEmail(e.target.value)}
           />
           <motion.button
             className="sub-btn"
             variants={buttonVariant}
             whileHover="hover"
+            disabled = {loading ? true : false}
           >
             Subscribe
           </motion.button>
         </form>
       </div>
+          <p className="succ">{msg}  {msg.length > 0 && <i className="fa fa-times" style={{cursor: "pointer"}} onClick = {() => setMsg("")}></i>}</p>
       <div className="footer-top">
         <div className="footer-top-1">
           <p>
@@ -63,7 +92,7 @@ export const Footer = () => {
         </div>
         <div className="footer-top2">
           <h3>Contact Us</h3>
-          <p>EMAIL: schf@gmail.com</p>
+          <p>EMAIL: support@schf.org.ng</p>
           <p>WORKING DAYS:</p>
           <p>MONDAYS - FRIDAYS</p>
           <p>WORKING HOURS:</p>

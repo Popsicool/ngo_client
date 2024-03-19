@@ -4,10 +4,12 @@ import pageVariant from "../components/variants/PageVariants";
 import { Helmet } from "react-helmet-async";
 import { TopText } from "../components/TopText";
 import "../styles/eventspage.css";
-import events from "../components/variants/pevents";
+import { useSnapshot } from "valtio";
+import { state } from "../App";
 import { EventCard } from "../components/EventCard";
 
 export const Events = () => {
+  const { events } = useSnapshot(state);
   return (
     <motion.div
       variants={pageVariant}

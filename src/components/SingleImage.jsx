@@ -1,7 +1,17 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const SingleImg = ({ card }) => {
+export const SingleImg = ({ card, setShowModal, setSelected}) => {
+  const isImage = (url) => {
+    return /\.(jpeg|jpg|gif|png)$/i.test(url);
+  };
+  const isVideo = (url) => {
+    return /\.(mp4|ogg|webm)$/i.test(url);
+  };
+  const handleClick = (e) => {
+    setShowModal(true)
+    setSelected(e)
+  }
   return (
     <motion.div
       layout
@@ -11,7 +21,10 @@ export const SingleImg = ({ card }) => {
       transition={{ duration: 0.5 }}
     >
       <div>
-        <img src={card.img} />
+        { isImage(card.url) ? <img src= {card.url} onClick={() => handleClick(card)} /> : isVideo(card.url) && <video controls>
+          <source src={card.url} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> }
       </div>
     </motion.div>
   );

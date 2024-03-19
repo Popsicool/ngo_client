@@ -30,7 +30,7 @@ export const UpEvent = () => {
       <TopText text="Upcoming event" />
       <div className="indeventpage">
         <motion.div className="eventpageImg">
-          <img src={singleEvent.img} />
+          <img src={singleEvent.banner} />
         </motion.div>
         <h2 className="p-event-head">{singleEvent.title}</h2>
         <p className="eventdescription">Description</p>

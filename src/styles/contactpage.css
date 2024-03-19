@@ -47,6 +47,15 @@
 .contact-text-area {
   height: 20vh;
 }
+.error{
+  text-align: center;
+  color: #ff0000;
+}
+.succ{
+  text-align: center;
+  color: #509609;
+}
+
 .cont-btn-wrap {
   width: 100%;
   display: grid;

@@ -24,7 +24,7 @@ const image = {
 };
 export const Modal = ({ setShowModal, selected }) => {
   return (
-    <>
+    <div  className="modal-modal">
       <motion.div
         className="backdrop"
         variants={backdrop}
@@ -40,9 +40,9 @@ export const Modal = ({ setShowModal, selected }) => {
           exit="hidden"
           animate="visible"
         >
-          <img src={selected} />
+          <img src={selected.url} />
         </motion.div>
       )}
-    </>
+    </div>
   );
 };
